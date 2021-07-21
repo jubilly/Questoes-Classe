@@ -17,7 +17,7 @@ Compromissos adicionarCompromisso(Compromissos com)
     cout << "Adicionar o dia:";
     cin >> com.dia;
 
-    cout << "Adicionar o mês:";
+    cout << "Adicionar o mes:";
     cin >> com.mes;
 
     cout << "Adicionar o ano:";
@@ -33,7 +33,7 @@ Compromissos adicionarCompromisso(Compromissos com)
     cin.ignore();
     getline(cin, com.local);
 
-    cout << "Adicionar o descrição:";
+    cout << "Adicionar o descricao:";
 
     getline(cin, com.descricao);
 
@@ -49,7 +49,7 @@ void verCompromissos(Compromissos agenda[], int qtd)
     {
         cout << "Compromisso #" << i+1 <<":" << "\n";
         cout << "Local = " << agenda[i].local << "\n";
-        cout << "Descrição = " << agenda[i].descricao << "\n";
+        cout << "Descricao = " << agenda[i].descricao << "\n";
         cout << "Data e Hora = " << agenda[i].dia << "/" << agenda[i].mes << "/" << agenda[i].ano << " " << agenda[i].hora <<":" << agenda[i].minuto <<"\n\n";
 
 
@@ -68,7 +68,7 @@ int main()
     {
         system("cls");
         int opcao;
-        cout <<"1 - Adicionar um compromisso\n2 - Ver os compromissos\n0 - Sair\nEscolha uma opção:";
+        cout <<"1 - Adicionar um compromisso\n2 - Ver os compromissos\n0 - Sair\nEscolha uma opcao:";
         cin >> opcao;
         switch(opcao)
         {
